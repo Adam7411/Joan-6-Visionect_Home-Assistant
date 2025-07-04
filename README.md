@@ -34,9 +34,9 @@ P.S Docker z panelem sterowania Visionect Software Suite (muzg tabletu) cały cz
 
 ## ✏️ Krok 2: Utworzenie pliku `docker-compose.yml`
 
-1. Zaloguj się do nowo utworzonej maszyny wirtualnej z Dockerem (z Proxmoxa)
+1. Zaloguj się do nowo utworzonej maszyny wirtualnej Docker VM (z Proxmoxa)
 
-2. Otwórz terminal (Shell) tej maszyny
+2. W Dockerze VM otwórz terminal (Shell) 
 
 3. Wpisz komendę, aby utworzyć plik:
 
