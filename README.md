@@ -121,6 +121,7 @@ jeśli procesor aarch64	ARM (np. RPi)	🔁 zostaw -arm w image
    For Windows: 👉 https://files.visionect.com/VisionectConfigurator/VisionectConfigurator.exe 
 
    For Linux: 👉 https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_linux.deb
+
    For MacOS: 👉 https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_m1.dmg 👉 https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_intel.dmg
 
 3. Podłącz tablet do komputera przez USB
@@ -143,11 +144,5 @@ jeśli procesor aarch64	ARM (np. RPi)	🔁 zostaw -arm w image
 
 - Zainstaluj **AppDaemon** w Home Assistant i stwórz swój dashboard
 
-
-
 ---
 
-## 📌 Autor
-
-Instrukcja przygotowana jako szybki start do uruchomienia Visionect Server 3 na Proxmox z użyciem Dockera.  
-Możesz swobodnie ją edytować, rozszerzać i integrować z własnym środowiskiem automatyki domowej.
