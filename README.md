@@ -155,8 +155,8 @@ Aby wyświetlić interfejs Home Assistant na tablecie, użyjemy dodatku **AppDae
 ## ⭐ Integracja z Home Assistant (Odczyt stanu tabletu)
 
 Aby odczytywać w Home Assistant informacje o stanie tabletu (np. poziom naładowania baterii, status połączenia itp), możesz skorzystać z niestandardowej integracji HACS dostępnej w moim drugim repozytorium  [Visionect Joan](https://github.com/Adam7411/visionect_joan).
+Pozwoli to na tworzenie automatyzacji np. wysyłania powiadomienia o niskim stanie baterii albo wyświetlenie encji z poziomem bateri na tablecie.
 
-Pozwoli to na tworzenie automatyzacji, np. wysyłania powiadomienia o niskim stanie baterii albo dodanie poziomu baterii na tablecie;)
 ![image](https://github.com/user-attachments/assets/e7cfc034-8895-49d3-852c-426cfd9e3811)
 
 
