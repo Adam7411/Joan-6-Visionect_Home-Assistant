@@ -14,7 +14,7 @@ Joan 6 to 6-calowy wyświetlacz E-Ink firmy Visionect, oryginalnie zaprojektowan
 - Komputer z systemem Windows, Linux lub macOS (do wstępnej konfiguracji tabletu).
 - Tablet **Visionect Joan 6**.
 
-> **Ważna uwaga:** Kontener Docker z oprogramowaniem Visionect Software Suite (serwerem zarządzającym tabletem) musi być stale uruchomiony. Jeśli korzystasz już z Home Assistant na Proxmoxie, nie stanowi to dodatkowego obciążenia. Serwer można również zainstalować na oddzielnej maszynie.
+> **Ważna uwaga:** Kontener Docker z oprogramowaniem Visionect Software Suite (serwerem zarządzającym tabletem) musi być stale uruchomiony. Jeśli korzystasz już z Home Assistant na Proxmoxie, nie stanowi to dodatkowego obciążenia. Aczkolwiek można osobno HA na innym urządzeniu.
 
 ---
 
@@ -97,7 +97,9 @@ Joan 6 to 6-calowy wyświetlacz E-Ink firmy Visionect, oryginalnie zaprojektowan
     *   Wprowadź dane swojego serwera:
         *   **Server IP**: Adres IP Twojej maszyny wirtualnej z Dockerem (np. `192.168.1.100`).
         *   **Port**: `11113`
+        *   
     ![image](https://github.com/user-attachments/assets/de30fd1e-9bd3-4f98-ab00-9a3b534f7332)
+
 4.  Kliknij przycisk, aby połączyć tablet z serwerem.
 5.  Po chwili tablet powinien pojawić się w panelu **Visionect Software Suite** na liście urządzeń.
     ![image](https://github.com/user-attachments/assets/37a58b07-d292-41dd-bd2d-8c0b84c9ad6b)
