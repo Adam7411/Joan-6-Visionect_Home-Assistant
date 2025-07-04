@@ -70,7 +70,9 @@ jeśli poprawnie zobaczysz coś podobnego (-rw-r--r-- 1 root root 1079 Jul  4 13
     ```bash
     docker compose up -d
     ```
-2.  Proces może chwilę potrwać, ponieważ Docker musi pobrać wymagane obrazy: `postgres_db`, `redis` oraz `vserver3`.
+2.  Proces może chwilę potrwać, ponieważ Docker musi pobrać wymagane obrazy: 
+`postgres_db`, `redis` oraz `vserver3`.
+
 3.  Sprawdź status uruchomionych kontenerów:
     ```bash
     docker ps
