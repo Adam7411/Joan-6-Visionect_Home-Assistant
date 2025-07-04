@@ -112,18 +112,18 @@ Aby wyświetlić interfejs Home Assistant na tablecie, użyjemy dodatku **AppDae
 
 1.  Zainstaluj dodatek **AppDaemon** w Home Assistant (jeśli jeszcze go nie masz).
 2.  Przejdź do katalogu konfiguracyjnego AppDaemon, np. przez dodatek "Samba share" lub "File editor":  
-    `\config\appdaemon\dashboards\`
-3.  Utwórz w tym katalogu nowy plik z rozszerzeniem `.dash`, np. `joan_panel.dash`.
+    `\config\appdaemon\dashboards\` ( umnie to wygląda tak \\adres HA\addon_configs\a7c7b154_appdaemon\dashboards\ )
+3.  Utwórz w tym katalogu nowy plik z rozszerzeniem `.dash`, np. `joanl.dash`.
 4.  Możesz skorzystać z gotowych szablonów dashboardów z tego repozytorium:
     *   [joan1.dash](https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/joan1.dash)
     *   [joan2.dash](https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/joan2.dash)
 5.  **Ważne:** Zmodyfikuj plik `.dash`, podmieniając przykładowe encje na własne encje z Home Assistant. Szczegółową dokumentację tworzenia dashboardów znajdziesz na [oficjalnej stronie AppDaemon](https://appdaemon.readthedocs.io/en/latest/DASHBOARD_CREATION.html).
 6.  Zrestartuj dodatek AppDaemon, aby załadować nową konfigurację.
 7.  Sprawdź, czy Twój dashboard działa, otwierając w przeglądarce adres:  
-    `http://<adres_ip_ha>:5050/joan_panel`  
-    (zmień `joan_panel` na nazwę swojego pliku `.dash`).
+    `http://<adres_ip_ha>:5050/joanl`  
+    (zmień `joanl` na nazwę swojego pliku `.dash`).
 8.  Skopiuj ten adres URL.
-9.  Wróć do panelu **Visionect Software Suite**, przejdź do ustawień swojego tabletu i w polu **URL** wklej skopiowany adres dashboardu. Zapisz zmiany.
+9.  Wróć do panelu **Visionect Software Suite**, przejdź do ustawień swojego tabletu i w polu **Default URL** wklej skopiowany adres dashboardu. Zapisz zmiany.
     ![image](https://github.com/user-attachments/assets/00558b5d-ad93-44ab-b4f0-ae8e9b1be20f)
 10. Po chwili na ekranie tabletu powinien pojawić się Twój dashboard z Home Assistant.
 
@@ -136,6 +136,5 @@ Aby wyświetlić interfejs Home Assistant na tablecie, użyjemy dodatku **AppDae
 
 ## ⭐ Integracja z Home Assistant (Odczyt stanu tabletu)
 
-Aby odczytywać w Home Assistant informacje o stanie tabletu (np. poziom naładowania baterii, status połączenia), możesz skorzystać z niestandardowej integracji HACS dostępnej w moim drugim repozytorium. Pozwoli to na tworzenie automatyzacji, np. wysyłania powiadomienia o niskim stanie baterii.
+Aby odczytywać w Home Assistant informacje o stanie tabletu (np. poziom naładowania baterii, status połączenia), możesz skorzystać z niestandardowej integracji HACS dostępnej w moim drugim repozytorium Visionect Joan. Pozwoli to na tworzenie automatyzacji, np. wysyłania powiadomienia o niskim stanie baterii albo dodanie poziomu baterii na tablecie;)
 
-> W innym moim repozytorium znajdziesz niestandardowy dodatek do HACS, który odczytuje podstawowe informacje z tabletu Joan 6 do Home Assistant (poziom baterii, stan itp.), co jest potrzebne do tworzenia automatyzacji, głównie powiadomień o stanie baterii.
