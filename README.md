@@ -36,7 +36,7 @@ Joan 6 to 6-calowy wyświetlacz E-Ink firmy Visionect, oryginalnie zaprojektowan
 
 ## ✏️ Krok 2: Utworzenie pliku `docker-compose.yml`
 
-1.  Zaloguj się do nowo utworzonej maszyny wirtualnej (Docker VM) przez konsolę w Proxmoxie.
+1.  Zaloguj się do nowo utworzonej maszyny wirtualnej (Docker VM) przez konsolę w Proxmoxie (docker login: root).
 2.  Utwórz nowy plik `docker-compose.yml` za pomocą edytora `nano`:
     ```bash
     nano docker-compose.yml
