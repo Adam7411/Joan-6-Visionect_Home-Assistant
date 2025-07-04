@@ -60,7 +60,7 @@ Joan 6 to 6-calowy wyświetlacz E-Ink firmy Visionect, oryginalnie zaprojektowan
     ```bash
     ls -l docker-compose.yml
     ```
-
+jeśli poprawnie zobaczysz coś podobnego (-rw-r--r-- 1 root root 1079 Jul  4 13:45 docker-compose.yml)
 ---
 
 ## 🚀 Krok 3: Uruchomienie kontenerów Dockera
