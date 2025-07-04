@@ -1,7 +1,9 @@
 Joan 6 wyświetlacz E-Ink firmy Visionect służy jako system rezerwacji sal ale nada się jako energooszczędny przenośny dotykowy tablet do zarządzana encjami z Home Assistant.
 
 
-![image](https://github.com/user-attachments/assets/054cda40-bb31-4192-9b8d-c88860b5e144) -> ![image](https://github.com/user-attachments/assets/cbf68ceb-0bf0-478a-90a8-61939c2d6890)
+![image](https://github.com/user-attachments/assets/054cda40-bb31-4192-9b8d-c88860b5e144)
+
+![image](https://github.com/user-attachments/assets/440e108e-4ffa-497a-893c-9be2b7d67f02)
 
 
 ---
