@@ -23,7 +23,25 @@ layout:
   - script.radio_rmf_fm(1x1), sensor.czujnik_temperatury_podogowka_powr_t_pod_og_wka(1x1), sensor.czujnik_temperatury_podogowka_powr_t_pod_og_wka(1x1)
   - sensor.czujnik_wilgotnosci_i_temperatury_salon_temperature(1x1), sensor.czujnik_wilgotnosci_i_temperatury_salon_humidity(1x1), sensor.czujnik_wilgotnosci_i_temperatury_sypialnia_temperature(1x1), sensor.czujnik_wilgotnosci_i_temperatury_sypialnia_humidity(1x1), sensor.czujnik_wilgotnosci_i_temperatury_witek_temperature(1x1), sensor.czujnik_wilgotnosci_i_temperatury_kuchnia_temperature(1x1)
   - sensor.czujnik_wilgotnosci_i_temperatury_strych_temperature(1x1), sensor.czujnik_wilgotnosci_i_temperatury_lazienka_temperature(1x1), sensor.czujnik_wilgotnosci_i_temperatury_lazienka_humidity(1x1), sensor.czujnik_wilgotnosci_i_temperatury_strych_humidity(1x1), sensor.czujnik_wilgotnosci_i_temperatury_podworko_wiata_temperature(1x1), sensor.czujnik_wilgotnosci_i_temperatury_podworko_wiata_humidity(1x1), sensor.brama_wjazdowa_temperatura_wjazdowa_2(1x1), sensor.czujnik_wilgotnosci_i_temperatury_wojtek_temperature(1x1)
-  - sensor.czujnik_wilgotnosci_i_temperatury_kuchnia_humidity(1x1), sensor.czujnik_temperatury_podogowka_zasilanie_pod_og_wka(1x1)
+  - sensor.czujnik_wilgotnosci_i_temperatury_kuchnia_humidity(1x1), sensor.czujnik_temperatury_podogowka_zasilanie_pod_og_wka(1x1), cover.roleta_witek(1x1)
+
+cover.roleta_witek:
+  widget_type: cover
+  entity: cover.roleta_witek
+  title: Roleta Witek
+  icon_on: mdi-window-shutter-open
+  icon_off: mdi-window-shutter
+  state_text: 1
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "open": "OTWARTA"
+    "closed": "ZAMKNIĘTA"
+    "opening": "OTWIERANIE"
+    "closing": "ZAMYKANIE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
 
 navigate.joan1:
   widget_type: navigate
