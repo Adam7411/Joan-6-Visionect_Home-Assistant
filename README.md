@@ -148,6 +148,8 @@ jeśli procesor aarch64	ARM (np. RPi)	🔁 zostaw -arm w image
 
 6. Tablet powinien być widoczny w panelu Visionect Software Suite
 
+![image](https://github.com/user-attachments/assets/37a58b07-d292-41dd-bd2d-8c0b84c9ad6b)
+
 ---
 
 
