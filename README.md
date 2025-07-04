@@ -1,4 +1,4 @@
-# 🖥️ Visionect Server 3 na Proxmox z Docker
+# 🖥️ Visionect Server 3 na Proxmox z Docker 
 
 Ten projekt umożliwia szybkie uruchomienie **Visionect Server 3** w środowisku **Docker**, działającym na maszynie wirtualnej w **Proxmox VE**.
 
@@ -9,21 +9,21 @@ Ten projekt umożliwia szybkie uruchomienie **Visionect Server 3** w środowisku
 - Zainstalowany **Proxmox VE** z dostępem do internetu
 - Uprawnienia administratora (root) do serwera
 - Komputer z systemem Windows (do konfiguracji tabletu)
-- Tablet Visionect
+- Tablet Visionect Joan 6
 
 ---
 
 ## 📦 Krok 1: Instalacja Dockera w maszynie wirtualnej Proxmox
 
 1. Zaloguj się do **Proxmox Web UI**
-2. Przejdź do **Shell** serwera głównego (node, np. `pve`)
+2. Przejdź do **Shell** serwera głównego 
 3. Wklej poniższy skrypt i uruchom:
 
    ```bash
    bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/vm/docker-vm.sh)"
    ```
 
-4. Skrypt utworzy maszynę wirtualną z systemem Linux i zainstaluje Dockera
+4. Skrypt utworzy maszynę wirtualną i zainstaluje Dockera
 
 ---
 
@@ -39,13 +39,13 @@ Ten projekt umożliwia szybkie uruchomienie **Visionect Server 3** w środowisku
    nano docker-compose.yml
    ```
 
-4. Skopiuj zawartość z pliku na GitHub:  
-   👉 https://github.com/james-xli/visionect-fog/blob/main/docker-compose.yml
+4. Skopiuj zawartość z pliku :  
+   👉 docker-compose.yml
 
 5. Wklej skopiowaną treść do terminala (prawym przyciskiem myszy > Wklej)
 
 6. Znajdź tę linię w pliku:
-
+jeśli procesor masz x86_64	Intel/AMD	✅ usuń -arm z image
    ```yaml
    image: visionect/visionect-server-v3:7.6.5-arm
    ```
@@ -55,7 +55,7 @@ Ten projekt umożliwia szybkie uruchomienie **Visionect Server 3** w środowisku
    ```yaml
    image: visionect/visionect-server-v3:7.6.5
    ```
-
+jeśli procesor aarch64	ARM (np. RPi)	🔁 zostaw -arm w image
 7. Zapisz plik:
 
    - `Ctrl + O` → zapisz  
@@ -133,25 +133,10 @@ Ten projekt umożliwia szybkie uruchomienie **Visionect Server 3** w środowisku
 
 ## 🧠 Co dalej?
 
-- Możesz teraz zintegrować Visionect z Home Assistantem
-- Zainstaluj **AppDaemon**, twórz aplikacje i automatyzacje
-- Zarządzaj ekranami i treściami z poziomu Visionect Server
 
----
+- Zainstaluj **AppDaemon** w Home Assistant i stwórz swój dashboard
 
-## 🛠️ Pomoc
 
-Jeśli napotkasz problemy:
-
-- Sprawdź logi kontenerów:
-
-  ```bash
-  docker logs <nazwa_kontenera>
-  ```
-
-- Sprawdź poprawność IP i portów
-- Upewnij się, że kontenery działają: `docker ps`
-- Zajrzyj do dokumentacji Visionect: https://docs.visionect.com
 
 ---
 
