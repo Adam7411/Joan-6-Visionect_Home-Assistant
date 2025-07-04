@@ -137,13 +137,16 @@ jeśli procesor aarch64	ARM (np. RPi)	🔁 zostaw -arm w image
      - **Server IP**: `192.168.1.100` (adres IP Dockera)
      - **Port**: `11113`
 
+![image](https://github.com/user-attachments/assets/de30fd1e-9bd3-4f98-ab00-9a3b534f7332)
+
+
 5. Połącz się z serwerem
 
 6. Tablet powinien być widoczny w panelu Visionect Software Suite
 
 ---
 
-## 🧠 Co dalej?
+
 
 
 - Zainstaluj **AppDaemon** w Home Assistant i stwórz swój dashboard
