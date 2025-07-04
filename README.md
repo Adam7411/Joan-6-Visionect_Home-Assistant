@@ -125,7 +125,8 @@ jeśli procesor aarch64	ARM (np. RPi)	🔁 zostaw -arm w image
 
    For Linux: 👉 https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_linux.deb
 
-   For MacOS: 👉 https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_m1.dmg 👉 https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_intel.dmg
+   For MacOS: 👉 https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_m1.dmg
+   👉 https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_intel.dmg
 
 3. Podłącz tablet do komputera przez USB
 
