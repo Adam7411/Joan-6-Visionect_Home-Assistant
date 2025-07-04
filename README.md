@@ -58,6 +58,8 @@ jeśli procesor x86_64	Intel/AMD	✅ usuń -arm z image
    ```yaml
    image: visionect/visionect-server-v3:7.6.5
    ```
+________________________________________________
+
 jeśli procesor aarch64	ARM (np. RPi)	🔁 zostaw -arm w image
 
 7. Zapisz plik:
