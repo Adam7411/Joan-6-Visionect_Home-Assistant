@@ -159,9 +159,12 @@ jeśli procesor aarch64	ARM (np. RPi)	🔁 zostaw -arm w image
  
 
 Po instalacji AppDaemon w katalogu dashboards (\\adres lokalny HA\addon_configs\a7d7b994_appdaemon\dashboards\) tworzymy plik dashboard .dash 
-(ja mam joan1.dash i joan2.dash) 👉 https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/joan1.dash i 👉 https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/joan2.dash w plikach podmienić na swoje encje z HA lub jak kto woli 👉 https://appdaemon.readthedocs.io/en/latest/DASHBOARD_CREATION.html
+
+(ja mam joan1.dash i joan2.dash) 👉 https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/joan1.dash i 👉 https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/joan2.dash 
+w plikach podmienić na swoje encje z HA lub jak kto woli 👉 https://appdaemon.readthedocs.io/en/latest/DASHBOARD_CREATION.html
 
 Gdy mamy gotowy plik z swoim dashboards uruchamiamy ponownie AppDaemon i sprawdzamy czy dashboards działa w przeglądarce wpisujemy http://adres HA:5050/joan1 
+
 Jeśli wyświetli dashboards adres wpisujemy w panelu sterowania Visionect Software Suite
 ![image](https://github.com/user-attachments/assets/00558b5d-ad93-44ab-b4f0-ae8e9b1be20f)
 
