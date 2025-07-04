@@ -40,12 +40,14 @@ Ten projekt umożliwia szybkie uruchomienie **Visionect Server 3** w środowisku
    ```
 
 4. Skopiuj zawartość z pliku :  
-   👉 docker-compose.yml
 
-5. Wklej skopiowaną treść do terminala (prawym przyciskiem myszy > Wklej)
+    👉 docker-compose.yml
 
-6. Znajdź tę linię w pliku:
-jeśli procesor masz x86_64	Intel/AMD	✅ usuń -arm z image
+6. Wklej skopiowaną treść do terminala (prawym przyciskiem myszy > Wklej)
+
+7. Znajdź tę linię w pliku:
+
+jeśli procesor x86_64	Intel/AMD	✅ usuń -arm z image
    ```yaml
    image: visionect/visionect-server-v3:7.6.5-arm
    ```
@@ -56,6 +58,7 @@ jeśli procesor masz x86_64	Intel/AMD	✅ usuń -arm z image
    image: visionect/visionect-server-v3:7.6.5
    ```
 jeśli procesor aarch64	ARM (np. RPi)	🔁 zostaw -arm w image
+
 7. Zapisz plik:
 
    - `Ctrl + O` → zapisz  
@@ -105,29 +108,33 @@ jeśli procesor aarch64	ARM (np. RPi)	🔁 zostaw -arm w image
    http://192.168.1.100:8081
    ```
 
-2. Powinieneś zobaczyć panel Visionect Server 3
+2. Powinieneś zobaczyć panel logowania Visionect Server
 
-3. Zaloguj się (domyślnym lub skonfigurowanym loginem i hasłem)
+3. Wpisz swoje hasło ( póżniej loging:admin + swoje hasło )
 
 ---
 
 ## 📲 Krok 5: Konfiguracja tabletu Visionect
 
 1. Pobierz i uruchom aplikację konfiguracyjną:
-   👉 https://files.visionect.com/VisionectConfigurator/VisionectConfigurator.exe
 
-2. Podłącz tablet do komputera przez USB
+   For Windows: 👉 https://files.visionect.com/VisionectConfigurator/VisionectConfigurator.exe 
 
-3. Po wykryciu tabletu:
+   For Linux: 👉 https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_linux.deb
+   For MacOS: 👉 https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_m1.dmg 👉 https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_intel.dmg
+
+3. Podłącz tablet do komputera przez USB
+
+4. Po wykryciu tabletu:
    - Wybierz swoją sieć Wi-Fi i wpisz hasło
    - Przejdź do **Advanced Connectivity**
    - Wprowadź:
      - **Server IP**: `192.168.1.100` (adres IP Dockera)
      - **Port**: `11113`
 
-4. Połącz się z serwerem
+5. Połącz się z serwerem
 
-5. Tablet powinien być widoczny w panelu Visionect Software Suite
+6. Tablet powinien być widoczny w panelu Visionect Software Suite
 
 ---
 
