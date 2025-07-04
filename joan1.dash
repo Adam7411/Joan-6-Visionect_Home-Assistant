@@ -1,0 +1,230 @@
+itle: Joan1
+widget_dimensions: [117, 117]
+widget_size: [2, 1]
+widget_margins: [8, 8]
+columns: 6 
+rows: 8
+global_parameters:
+  use_comma: 0
+  precision: 1
+  use_hass_icon: 1
+  namespace: default
+  devices:
+    media_player:
+      step: 5
+  white_text_style: "color: #000000 !important; font-weight: 700 !important;"
+  state_text_style: "color: #000000 !important; font-weight: 700 !important; font-size: 16px !important;"
+skin: simplyred
+layout:
+  - switch.tryb_cwu, switch.tryb_ogrzewania, switch.antylegionella
+  - sensor.temperatura_zasobnika_na_dole_stiebel_eltron, sensor.czujnik_wilgotnosci_i_temperatury_podworko_wiata_temperature, sensor.czujnik_wilgotnosci_i_temperatury_podworko_wiata_humidity
+  - sensor.parcel_locker_szka01bapp_cisnienie, sensor.hydrofor_wymiana_filtra, sensor.suma_produkcja_fotowoltaika
+  - switch.hydrofor, cover.brama_wjazdowa_brama_wjazdowa_2, cover.brama_garaz_brama_gara_owa
+  - swiatlo_podworko_ganek_l1, swiatlo_podworko_ganek_l2
+  - navigate.joan2
+
+
+sensor.temperatura_zasobnika_na_dole_stiebel_eltron:
+  widget_type: sensor
+  entity: sensor.temperatura_zasobnika_na_dole_stiebel_eltron
+  title: Temperatura wody
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  text_style: "color: #000000 !important;"
+  value_style: "color: #000000 !important; font-size: 44px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+
+sensor.hydrofor_wymiana_filtra:
+  widget_type: sensor
+  entity: sensor.hydrofor_wymiana_filtra
+  title: Filtr wymieniono
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  text_style: "color: #000000 !important;"
+  value_style: "color: #000000 !important; font-size: 44px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  precision: 0  # Ta linia powoduje wyświetlanie liczby bez miejsc po przecinku
+
+sensor.parcel_locker_szka01bapp_cisnienie:
+  widget_type: sensor
+  entity: sensor.parcel_locker_szka01bapp_cisnienie
+  title: Ciśnienie
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  text_style: "color: #000000 !important;"
+  value_style: "color: #000000 !important; font-size: 44px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+
+navigate.joan2:
+  widget_type: navigate
+  title: "Joan2"
+  dashboard: joan2
+  icon_inactive: mdi-arrow-left-circle
+  title_style: "color: #000000; font-size: 24px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  widget_style: "background-color: #FFFFFF !important; border-radius: 8px !important; padding: 10px !important;"
+
+cover.brama_garaz_brama_gara_owa:
+  widget_type: cover
+  entity: cover.brama_garaz_brama_gara_owa
+  title: Brama garażowa
+  icon_on: mdi-garage-open
+  icon_off: mdi-garage
+  state_text: 1
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "open": "OTWARTA"
+    "closed": "ZAMKNIĘTA"
+    "opening": "OTWIERANIE"
+    "closing": "ZAMYKANIE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+cover.brama_wjazdowa_brama_wjazdowa_2:
+  widget_type: cover
+  entity: cover.brama_wjazdowa_brama_wjazdowa_2
+  title: Brama wjazdowa
+  icon_on: mdi-gate-open
+  icon_off: mdi-gate
+  state_text: 1
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "open": "OTWARTA"
+    "closed": "ZAMKNIĘTA"
+    "opening": "OTWIERANIE"
+    "closing": "ZAMYKANIE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+swiatlo_podworko_ganek_l1:
+  widget_type: switch
+  entity: light.swiatlo_podworko_ganek_l1
+  title: Światło ganek L1
+  icon_on: mdi-lightbulb-on
+  icon_off: mdi-lightbulb-outline
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  step: 100%
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONE"
+    "off": "WYŁĄCZONE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+swiatlo_podworko_ganek_l2:
+  widget_type: switch
+  entity: light.swiatlo_podworko_ganek_l2
+  title: Światło ganek L2
+  icon_on: mdi-lightbulb-on
+  icon_off: mdi-lightbulb-outline
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  step: 100%
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONE"
+    "off": "WYŁĄCZONE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+switch.hydrofor:
+  widget_type: switch
+  entity: switch.hydrofor
+  title: Hydrofor
+  icon_on: mdi-storage-tank
+  icon_off: mdi-storage-tank-outline
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONY"
+    "off": "WYŁĄCZONY"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+sensor.czujnik_wilgotnosci_i_temperatury_podworko_wiata_temperature:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_podworko_wiata_temperature
+  title: Temperatura na polu
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  text_style: "color: #000000 !important;"
+  value_style: "color: #000000 !important; font-size: 44px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+
+sensor.czujnik_wilgotnosci_i_temperatury_podworko_wiata_humidity:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_podworko_wiata_humidity
+  title: Wilgotność na polu
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  text_style: "color: #000000 !important;"
+  value_style: "color: #000000 !important; font-size: 44px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+
+switch.tryb_cwu:
+  widget_type: switch
+  entity: switch.tryb_cwu
+  title: Ciepła woda CWU
+  icon_on: water-outline
+  icon_off: water-off
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONA"
+    "off": "WYŁĄCZONA"
+  icon_style_active: "color: #000000 !important;"
+  icon_style_inactive: "color: #000000 !important;"
+
+switch.tryb_ogrzewania:
+  widget_type: switch
+  entity: switch.tryb_ogrzewania
+  title: Ogrzewanie domu
+  icon_on: mdi-radiator
+  icon_off: mdi-radiator-off
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONO"
+    "off": "WYŁĄCZONO"
+  icon_style_active: "color: #000000 !important;"
+  icon_style_inactive: "color: #000000 !important;"
+
+switch.antylegionella:
+  widget_type: switch
+  entity: switch.antylegionella
+  title: Antylegionella
+  icon_on: mdi-shield-check
+  icon_off: mdi-shield-outline
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONY"
+    "off": "WYŁĄCZONY"
+  icon_style_active: "color: #000000 !important;"
+  icon_style_inactive: "color: #000000 !important;"
+
+
+sensor.suma_produkcja_fotowoltaika:
+  widget_type: sensor
+  entity: sensor.suma_produkcja_fotowoltaika
+  title: "Fotowoltaika dzień"
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  text_style: "color: #000000 !important;"
+  value_style: "color: #000000 !important; font-size: 44px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  precision: 1  # Jedno miejsce po przecinku (możesz zmienić na 0, jeśli chcesz liczbę całkowitą)

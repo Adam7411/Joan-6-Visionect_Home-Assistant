@@ -1,0 +1,496 @@
+title: Joan2
+widget_dimensions: [117, 117]
+widget_size: [2, 1]
+widget_margins: [8, 8]
+columns: 6 
+rows: 8
+global_parameters:
+  use_comma: 0
+  precision: 1
+  use_hass_icon: 1
+  namespace: default
+  devices:
+    media_player:
+      step: 5
+  white_text_style: "color: #000000 !important; font-weight: 700 !important;"
+  state_text_style: "color: #000000 !important; font-weight: 700 !important; font-size: 16px !important;"
+skin: simplyred
+layout:
+  - navigate.joan1(1x1), binary_sensor.czujnik_otwarcia_drzwi_schody_contact(1x1), fan.rekuperator_witek(1x1), fan.rekuperator_wojtek(1x1), light.ledy_wojtek(1x1), light.ledy_witek(1x1)
+  - light.swiatlo_podworko_garaz(1x1), light.swiatlo_podworko_ganek_l1(1x1), light.swiatlo_podworko_ganek_l2(1x1), light.swiatlo_garaz(1x1)
+  - light.lustro(1x1), light.swiatlo_korytarz(1x1), fan.wentylator_lazienkowy(1x1), light.swiatlo_nela(1x1), light.ledy_sypialnia(1x1)
+  - media_player.glosnik_kuchnia_2(2x2)
+  - script.radio_rmf_fm(1x1), sensor.czujnik_temperatury_podogowka_powr_t_pod_og_wka(1x1), sensor.czujnik_temperatury_podogowka_powr_t_pod_og_wka(1x1)
+  - sensor.czujnik_wilgotnosci_i_temperatury_salon_temperature(1x1), sensor.czujnik_wilgotnosci_i_temperatury_salon_humidity(1x1), sensor.czujnik_wilgotnosci_i_temperatury_sypialnia_temperature(1x1), sensor.czujnik_wilgotnosci_i_temperatury_sypialnia_humidity(1x1), sensor.czujnik_wilgotnosci_i_temperatury_witek_temperature(1x1), sensor.czujnik_wilgotnosci_i_temperatury_kuchnia_temperature(1x1)
+  - sensor.czujnik_wilgotnosci_i_temperatury_strych_temperature(1x1), sensor.czujnik_wilgotnosci_i_temperatury_lazienka_temperature(1x1), sensor.czujnik_wilgotnosci_i_temperatury_lazienka_humidity(1x1), sensor.czujnik_wilgotnosci_i_temperatury_strych_humidity(1x1), sensor.czujnik_wilgotnosci_i_temperatury_podworko_wiata_temperature(1x1), sensor.czujnik_wilgotnosci_i_temperatury_podworko_wiata_humidity(1x1), sensor.brama_wjazdowa_temperatura_wjazdowa_2(1x1), sensor.czujnik_wilgotnosci_i_temperatury_wojtek_temperature(1x1)
+  - sensor.czujnik_wilgotnosci_i_temperatury_kuchnia_humidity(1x1), sensor.czujnik_temperatury_podogowka_zasilanie_pod_og_wka(1x1)
+
+navigate.joan1:
+  widget_type: navigate
+  title: "Joan1"
+  dashboard: joan1
+  icon_inactive: mdi-arrow-left-circle
+  title_style: "color: #000000; font-size: 30px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  widget_style: "background-color: #FFFFFF !important; border-radius: 8px !important; padding: 10px !important;"
+
+script.radio_rmf_fm:
+  widget_type: script
+  entity: script.radio_rmf_fm
+  title: RMF FM
+  icon: mdi-radio
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  state_map:
+    "on": "WŁĄCZONE"
+    "off": "WYŁĄCZONE"
+
+binary_sensor.czujnik_otwarcia_drzwi_schody_contact:
+  widget_type: binary_sensor
+  entity: binary_sensor.czujnik_otwarcia_drzwi_schody_contact
+  title: Drzwi Schody
+  icon_on: mdi-door-open
+  icon_off: mdi-door-closed
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+  state_map:
+    "on": "OTWARTE"
+    "off": "ZAMKNIĘTE"
+
+media_player.glosnik_kuchnia_2:
+  widget_type: media_player
+  entity: media_player.glosnik_kuchnia_2
+  title: Głośnik Kuchnia
+  icon: mdi-speaker
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  controls:
+    - play_pause
+    - volume_up
+    - volume_down
+    - volume_mute
+  state_map:
+    "playing": "ODTWARZANIE"
+    "paused": "PAUZA"
+    "idle": "BEZCZYNNOŚĆ"
+    "off": "WYŁĄCZONY"
+
+# Switch widgets (1x1)
+fan.wentylator_lazienkowy:
+  widget_type: switch
+  entity: fan.wentylator_lazienkowy
+  title: Wentylator Łazienka
+  icon_on: mdi-fan
+  icon_off: mdi-fan-off
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONY"
+    "off": "WYŁĄCZONY"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+light.swiatlo_podworko_garaz:
+  widget_type: switch
+  entity: light.swiatlo_podworko_garaz
+  title: Światło Podwórko Garaż
+  icon_on: mdi-lightbulb-on
+  icon_off: mdi-lightbulb-outline
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONE"
+    "off": "WYŁĄCZONE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+light.swiatlo_podworko_ganek_l1:
+  widget_type: switch
+  entity: light.swiatlo_podworko_ganek_l1
+  title: Światło Ganek L1
+  icon_on: mdi-lightbulb-on
+  icon_off: mdi-lightbulb-outline
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONE"
+    "off": "WYŁĄCZONE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+light.swiatlo_podworko_ganek_l2:
+  widget_type: switch
+  entity: light.swiatlo_podworko_ganek_l2
+  title: Światło Ganek L2
+  icon_on: mdi-lightbulb-on
+  icon_off: mdi-lightbulb-outline
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONYE"
+    "off": "WYŁĄCZONYE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+fan.rekuperator_witek:
+  widget_type: switch
+  entity: fan.rekuperator_witek
+  title: Rekuperator Witek
+  icon_on: mdi-fan
+  icon_off: mdi-fan-off
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONY"
+    "off": "WYŁĄCZONY"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+fan.rekuperator_wojtek:
+  widget_type: switch
+  entity: fan.rekuperator_wojtek
+  title: Rekuperator Wojtek
+  icon_on: mdi-fan
+  icon_off: mdi-fan-off
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONY"
+    "off": "WYŁĄCZONY"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+light.swiatlo_garaz:
+  widget_type: switch
+  entity: light.swiatlo_garaz
+  title: Światło Garaż
+  icon_on: mdi-lightbulb-on
+  icon_off: mdi-lightbulb-outline
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONE"
+    "off": "WYŁĄCZONE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+light.lustro:
+  widget_type: switch
+  entity: light.lustro
+  title: Lustro
+  icon_on: mdi-lightbulb-on
+  icon_off: mdi-lightbulb-outline
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONE"
+    "off": "WYŁĄCZONE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+light.ledy_witek:
+  widget_type: switch
+  entity: light.ledy_witek
+  title: LED Witek
+  icon_on: mdi-led-strip-variant
+  icon_off: mdi-led-strip-variant-off
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONE"
+    "off": "WYŁĄCZONE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+light.ledy_wojtek:
+  widget_type: switch
+  entity: light.ledy_wojtek
+  title: LED Wojtek
+  icon_on: mdi-led-strip-variant
+  icon_off: mdi-led-strip-variant-off
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONE"
+    "off": "WYŁĄCZONE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+light.swiatlo_korytarz:
+  widget_type: switch
+  entity: light.swiatlo_korytarz
+  title: Światło Korytarz
+  icon_on: mdi-lightbulb-on
+  icon_off: mdi-lightbulb-outline
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONE"
+    "off": "WYŁĄCZONE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+light.swiatlo_nela:
+  widget_type: switch
+  entity: light.swiatlo_nela
+  title: Światło Nela
+  icon_on: mdi-lightbulb-on
+  icon_off: mdi-lightbulb-outline
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONE"
+    "off": "WYŁĄCZONE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+light.ledy_sypialnia:
+  widget_type: switch
+  entity: light.ledy_sypialnia
+  title: LED Sypialnia
+  icon_on: mdi-led-strip-variant
+  icon_off: mdi-led-strip-variant-off
+  title_style: "color: #000000; font-size: 20px; font-weight: 700; text-align: center; padding-top: 3px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  state_text: 1
+  text_style: "color: #000000 !important; font-weight: 700 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  state_map:
+    "on": "WŁĄCZONE"
+    "off": "WYŁĄCZONE"
+  icon_style_active: "color: #000000 !important;" 
+  icon_style_inactive: "color: #000000 !important;" 
+
+# Temperature and Humidity Sensors
+sensor.czujnik_wilgotnosci_i_temperatury_salon_temperature:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_salon_temperature
+  title: "Temperatura Salon"
+  icon: mdi-thermometer
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_wilgotnosci_i_temperatury_salon_humidity:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_salon_humidity
+  title: "Wilgotność Salon"
+  icon: mdi-water-percent
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_wilgotnosci_i_temperatury_sypialnia_temperature:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_sypialnia_temperature
+  title: "Temperatura Sypialnia"
+  icon: mdi-thermometer
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_wilgotnosci_i_temperatury_sypialnia_humidity:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_sypialnia_humidity
+  title: "Wilgotność Sypialnia"
+  icon: mdi-water-percent
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_wilgotnosci_i_temperatury_strych_temperature:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_strych_temperature
+  title: "Temperatura Strych"
+  icon: mdi-thermometer
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_wilgotnosci_i_temperatury_lazienka_temperature:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_lazienka_temperature
+  title: "Temperatura Łazienka"
+  icon: mdi-thermometer
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_wilgotnosci_i_temperatury_lazienka_humidity:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_lazienka_humidity
+  title: "Wilgotność Łazienka"
+  icon: mdi-water-percent
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_wilgotnosci_i_temperatury_strych_humidity:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_strych_humidity
+  title: "Wilgotność Strych"
+  icon: mdi-water-percent
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_wilgotnosci_i_temperatury_podworko_wiata_temperature:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_podworko_wiata_temperature
+  title: "Temperatura Podwórko"
+  icon: mdi-thermometer
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_wilgotnosci_i_temperatury_podworko_wiata_humidity:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_podworko_wiata_humidity
+  title: "Wilgotność Podwórko"
+  icon: mdi-water-percent
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.brama_wjazdowa_temperatura_wjazdowa_2:
+  widget_type: sensor
+  entity: sensor.brama_wjazdowa_temperatura_wjazdowa_2
+  title: "Temperatura Wjazd"
+  icon: mdi-thermometer
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_wilgotnosci_i_temperatury_wojtek_temperature:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_wojtek_temperature
+  title: "Temperatura Wojtek"
+  icon: mdi-thermometer
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_wilgotnosci_i_temperatury_witek_temperature:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_witek_temperature
+  title: "Temperatura Witek"
+  icon: mdi-thermometer
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_wilgotnosci_i_temperatury_kuchnia_temperature:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_kuchnia_temperature
+  title: "Temperatura Kuchnia"
+  icon: mdi-thermometer
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_wilgotnosci_i_temperatury_kuchnia_humidity:
+  widget_type: sensor
+  entity: sensor.czujnik_wilgotnosci_i_temperatury_kuchnia_humidity
+  title: "Wilgotność Kuchnia"
+  icon: mdi-water-percent
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_temperatury_podogowka_zasilanie_pod_og_wka:
+  widget_type: sensor
+  entity: sensor.czujnik_temperatury_podogowka_zasilanie_pod_og_wka
+  title: "Podłogówka Zasilanie"
+  icon: mdi-thermometer
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
+
+sensor.czujnik_temperatury_podogowka_powr_t_pod_og_wka:
+  widget_type: sensor
+  entity: sensor.czujnik_temperatury_podogowka_powr_t_pod_og_wka
+  title: "Podłogówka Powrót"
+  icon: mdi-thermometer
+  title_style: "color: #000000; font-size: 16px; font-weight: 700; text-align: center; padding-top: 5px; width: 100%; font-family: 'Roboto', 'Arial Black', sans-serif;"
+  value_style: "color: #000000 !important; font-size: 28px !important; font-weight: 700 !important;"
+  unit_style: "color: #000000 !important;"
+  widget_style: "color: #000000 !important; background-color: #FFFFFF !important;"
+  icon_style: "color: #000000 !important;"
+  precision: 1
