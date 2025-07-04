@@ -158,7 +158,7 @@ jeśli procesor aarch64	ARM (np. RPi)	🔁 zostaw -arm w image
 
  👉 https://appdaemon.readthedocs.io/en/latest/DASHBOARD_CREATION.html
 
- Po instalacji AppDaemon w katalogu dashboards (\\adres lokalny HA\addon_configs\a7d7b994_appdaemon\dashboards\) tworzymy plik dashboard .dash (ja mam joan1.dash i joan2.dash)
+ Po instalacji AppDaemon w katalogu dashboards (\\adres lokalny HA\addon_configs\a7d7b994_appdaemon\dashboards\) tworzymy plik dashboard .dash (ja mam joan1.dash i joan2.dash) 👉 https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/joan1.dash i 👉 https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/joan2.dash
 
 ---
 
