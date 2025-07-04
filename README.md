@@ -44,9 +44,9 @@ P.S Docker z panelem sterowania Visionect Software Suite (muzg tabletu) cały cz
    nano docker-compose.yml
    ```
 
-4. Skopiuj zawartość z pliku :  
+4. Skopiuj zawartość z pliku docker-compose.yml:  
 
-    👉 docker-compose.yml
+    👉 https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/docker-compose.yml
 
 6. Wklej skopiowaną treść do terminala (prawym przyciskiem myszy > Wklej)
 
