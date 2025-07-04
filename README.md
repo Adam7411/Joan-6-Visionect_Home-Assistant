@@ -158,6 +158,7 @@ jeśli procesor aarch64	ARM (np. RPi)	🔁 zostaw -arm w image
 
  👉 https://appdaemon.readthedocs.io/en/latest/DASHBOARD_CREATION.html
 
- po instalacji AppDaemon w katalogu dashboards (\\adres lokalny HA\addon_configs\a7d7b994_appdaemon\dashboards\) tworzymy plik dashboard .dash ja mam joan1.dash i joan2.dash
+ Po instalacji AppDaemon w katalogu dashboards (\\adres lokalny HA\addon_configs\a7d7b994_appdaemon\dashboards\) tworzymy plik dashboard .dash (ja mam joan1.dash i joan2.dash)
+
 ---
 
