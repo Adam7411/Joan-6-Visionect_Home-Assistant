@@ -15,7 +15,7 @@ Joan 6 wyświetlacz E-Ink firmy Visionect służy jako system rezerwacji sal ale
 - Komputer z systemem Windows (do konfiguracji tabletu)
 - Tablet Visionect Joan 6
 - 
-P.S Docker z panelem sterowania Visionect Software Suite (muzg tabletu) cały czas mają być włączone na Proxmox ale to nieproblem jeśli ktoś ma HA na Proxmoxie (oczywiście można też osobno)
+P.S Docker z panelem sterowania Visionect Software Suite (muzgiem tabletu) cały czas mają być włączone na Proxmox ale to nieproblem jeśli ktoś ma HA na Proxmoxie (oczywiście można też osobno)
 ---
 
 ## 📦 Krok 1: Instalacja Dockera w maszynie wirtualnej Proxmox
