@@ -88,9 +88,10 @@ jeśli poprawnie zobaczysz coś podobnego (-rw-r--r-- 1 root root 1079 Jul  4 13
 ![image](https://github.com/user-attachments/assets/aa31b162-4421-4518-96b5-767b486c9af0)
 
     
-3.  Powinieneś zobaczyć panel logowania Visionect Server.
+2.  Powinieneś zobaczyć panel logowania Visionect Server.
 
-![image](https://github.com/user-attachments/assets/e8805e96-fedc-4624-b3ad-090f7e48c950)
+![image](https://github.com/user-attachments/assets/6616f10a-7f5b-4458-b805-aa50cbd43eb9)
+
 
 3.  Przy pierwszym uruchomieniu zostaniesz poproszony o ustawienie hasła administratora. W kolejnych krokach będziesz logować się, używając nazwy użytkownika `admin` i swojego nowego hasła.
 
