@@ -1,6 +1,5 @@
-# 🖥️ Visionect Server 3 na Proxmox z Docker 
-
-Ten projekt umożliwia szybkie uruchomienie **Visionect Server 3** w środowisku **Docker**, działającym na maszynie wirtualnej w **Proxmox VE**.
+Joan 6 wyświetlacz E-Ink firmy Visionect służy jako system rezerwacji sal ale nada się jako energooszczędny przenośny dotykowy tablet do zarządzana encjami z Home Assistant.
+![image](https://github.com/user-attachments/assets/054cda40-bb31-4192-9b8d-c88860b5e144)
 
 ---
 
