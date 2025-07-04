@@ -154,8 +154,8 @@ jeśli procesor aarch64	ARM (np. RPi)	🔁 zostaw -arm w image
 
 
 
+## ✏️ Krok 6: Zainstaluj **AppDaemon** w Home Assistant i stwórz swój dashboard
 
-- Zainstaluj **AppDaemon** w Home Assistant i stwórz swój dashboard
 
 ---
 
