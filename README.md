@@ -19,7 +19,7 @@ Joan 6 to 6-calowy wyświetlacz E-Ink firmy Visionect, oryginalnie zaprojektowan
 - Komputer z systemem Windows, Linux lub macOS (do wstępnej konfiguracji tabletu).
 - Tablet **Visionect Joan 6**.
 
-> **Ważna uwaga:** Kontener Docker z oprogramowaniem Visionect Software Suite (serwerem zarządzającym tabletem) musi być stale uruchomiony. Jeśli korzystasz już z Home Assistant na Proxmoxie, nie stanowi to dodatkowego obciążenia. Aczkolwiek można osobno HA na innym urządzeniu.
+> **Ważna uwaga:** Kontener Docker z oprogramowaniem Visionect Software Suite (serwerem zarządzającym tabletem) musi być stale uruchomiony. Jeśli korzystasz już z Home Assistant na Proxmoxie, nie stanowi to dodatkowego obciążenia. Aczkolwiek HA może działać na innym urządzeniu.
 
 ---
 
