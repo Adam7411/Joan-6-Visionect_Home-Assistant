@@ -160,12 +160,12 @@ jeśli procesor aarch64	ARM (np. RPi)	🔁 zostaw -arm w image
 
 Po instalacji AppDaemon w katalogu dashboards (\\adres lokalny HA\addon_configs\a7d7b994_appdaemon\dashboards\) tworzymy plik dashboard .dash 
 
-(ja mam joan1.dash i joan2.dash) 👉 https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/joan1.dash i 👉 https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/joan2.dash 
-w plikach podmienić na swoje encje z HA lub jak kto woli 👉 https://appdaemon.readthedocs.io/en/latest/DASHBOARD_CREATION.html
+(ja mam joan1.dash i joan2.dash) gotowe pliki 👉 https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/joan1.dash i 👉 https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/joan2.dash 
+w plikach podmienić na swoje encje z HA lub jak kto woli zapraszam na strone 👉 https://appdaemon.readthedocs.io/en/latest/DASHBOARD_CREATION.html
 
 Gdy mamy gotowy plik z swoim dashboards uruchamiamy ponownie AppDaemon i sprawdzamy czy dashboards działa w przeglądarce wpisujemy http://adres HA:5050/joan1 
 
-Jeśli wyświetli dashboards adres wpisujemy w panelu sterowania Visionect Software Suite
+Jeśli wyświetli dashboards adres wpisujemy w panelu sterowania Visionect Software Suite jak na zdjęciu i zapisujemy.
 ![image](https://github.com/user-attachments/assets/00558b5d-ad93-44ab-b4f0-ae8e9b1be20f)
 
 Na wszystkich tabletach wyświetli się wasz dashboards
@@ -173,7 +173,7 @@ Na wszystkich tabletach wyświetli się wasz dashboards
 P.S można każdy kolejny stworzony dashboards przypisać do następnego tabletu Joan 6 warto tam ustawiś czas odświerzania
 ![image](https://github.com/user-attachments/assets/9f0c1741-76f3-496d-ad44-e316d29621f1)
 
-W innym moim repozytorium niestandardowy dodatek HASC który odczytuje podstawowe informacje z tabletu Jona 6 do Home Assistant (poziom beteri, stan itp)
+W innym moim repozytorium niestandardowy dodatek HASC który odczytuje podstawowe informacje z tabletu Jona 6 do Home Assistant (poziom beteri, stan itp) potrzebne do stworzenia automatyzacji głuwnie chodzi o powiadomieniu stanu bateri
 
 
 ---
