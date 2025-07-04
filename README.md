@@ -84,6 +84,7 @@ jeśli poprawnie zobaczysz coś podobnego (-rw-r--r-- 1 root root 1079 Jul  4 13
 1.  W przeglądarce internetowej wpisz adres IP swojej maszyny wirtualnej z Dockerem, dodając port `8081`, np.:
     `http://192.168.1.100:8081`
     
+    umnie przykładowo jest 192.168.100.132
 ![image](https://github.com/user-attachments/assets/aa31b162-4421-4518-96b5-767b486c9af0)
 
     
