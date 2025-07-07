@@ -121,7 +121,7 @@ jeśli poprawnie zobaczysz coś podobnego (-rw-r--r-- 1 root root 1079 Jul  4 13
 
 4.  Kliknij przycisk, aby połączyć tablet z serwerem.
 5.  Po chwili tablet powinien pojawić się w panelu **Visionect Software Suite** na liście urządzeń.
-    ![image](https://github.com/user-attachments/assets/37a58b07-d292-41dd-bd2d-8c0b84c9ad6b)
+
 
 ---
 
