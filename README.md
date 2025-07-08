@@ -5,7 +5,8 @@
 
 # Wykorzystanie tabletu e-papier Joan 6 Visionect jako panelu sterowania Home Assistant
 
-Instrukcja: https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/README.md
+
+<span style="font-size: 18px; font-weight: bold;"> [Instrukcja Joan 6 Visionect + Home Assistant](https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant/blob/main/README.md) </span>
 
 Joan 6 to 6-calowy wyświetlacz E-Ink firmy Visionect, oryginalnie zaprojektowany jako system rezerwacji sal konferencyjnych. Dzięki swojej energooszczędności, dotykowemu ekranowi i przenośności, doskonale nadaje się również do wykorzystania jako panel do zarządzania encjami w systemie Home Assistant.
 
