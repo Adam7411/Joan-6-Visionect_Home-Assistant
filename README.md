@@ -1,5 +1,6 @@
+![Uploading logojoan.png…]()
 
-<img width="412" alt="AaJoan6" src="https://github.com/user-attachments/assets/99dc604a-268c-498b-bea2-482306b16992" />
+
 
 
 # Wykorzystanie tabletu e-papier Visionect Joan 6 jako panelu sterowania Home Assistant
