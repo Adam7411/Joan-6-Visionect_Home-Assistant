@@ -2,6 +2,8 @@
 
 
 
+<img width="412" alt="AaJoan6" src="https://github.com/user-attachments/assets/1167b5a7-9d91-4700-a0b8-d39cd8e9fe2d" />
+
 
 # Wykorzystanie tabletu e-papier Visionect Joan 6 jako panelu sterowania Home Assistant
 
@@ -106,7 +108,7 @@ jeśli poprawnie zobaczysz coś podobnego (-rw-r--r-- 1 root root 1079 Jul  4 13
 
 1.  Pobierz i uruchom aplikację **Visionect Configurator** na swoim komputerze:
     *   **Windows:** [VisionectConfigurator.exe](https://files.visionect.com/VisionectConfigurator/VisionectConfigurator.exe) lub [joan-configurator-2.1.3-windows.exe](https://configurator.getjoan.com/download/flavor/joan/latest/windows_64) 
-    *   **Windows:Starsza wersja 1.3.10** [VisionectConfigurator2.exe](https://files.visionect.com/VisionectConfigurator2.exe) lub [VC_1.exe](https://files.visionect.com/VC_1.exe) gdy wyświetlacz e-ink niełączy się z nową (Hardware Revision Second generation Visionect Sign 6)
+    *   **Windows: Starsza wersja 1.3.10** [VisionectConfigurator2.exe](https://files.visionect.com/VisionectConfigurator2.exe) lub [VC_1.exe](https://files.visionect.com/VC_1.exe) gdy wyświetlacz e-ink niełączy się z nową (Hardware Revision Second generation Visionect Sign 6)
     *   **Linux:** [VisionectConfigurator_linux.deb](https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_linux.deb)
     *   **macOS (Apple Silicon):** [VisionectConfigurator_m1.dmg](https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_m1.dmg)
     *   **macOS (Intel):** [VisionectConfigurator_intel.dmg](https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_intel.dmg)
@@ -117,8 +119,12 @@ jeśli poprawnie zobaczysz coś podobnego (-rw-r--r-- 1 root root 1079 Jul  4 13
     *   Wprowadź dane swojego serwera:
         *   **Server IP**: Adres IP Twojej maszyny wirtualnej z Dockerem (np. `192.168.1.100`).
         *   **Port**: `11113`
-        *   
+     
+          Visionect Configurator wersja 2.0
     ![image](https://github.com/user-attachments/assets/de30fd1e-9bd3-4f98-ab00-9a3b534f7332)
+
+_______________________________________________
+Visionect Configurator wersja 1.3.10
 
 4.  Kliknij przycisk, aby połączyć tablet z serwerem.
 5.  Po chwili tablet powinien pojawić się w panelu **Visionect Software Suite** na liście urządzeń.
@@ -155,6 +161,7 @@ Aby wyświetlić interfejs Home Assistant na tablecie, użyjemy dodatku **AppDae
 ---
 
 ## ⭐ Integracja z Home Assistant (Odczyt stanu tabletu)
+
 
 Aby odczytywać w Home Assistant informacje o stanie tabletu (np. poziom naładowania baterii, status połączenia itp), możesz skorzystać z niestandardowej integracji HACS dostępnej w moim drugim repozytorium  [Visionect Joan](https://github.com/Adam7411/visionect_joan).
 Pozwoli to na tworzenie automatyzacji np. wysyłania powiadomienia o niskim stanie baterii albo wyświetlenie encji z poziomem bateri na tablecie.
