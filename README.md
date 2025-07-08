@@ -1,5 +1,5 @@
-![Uploading logojoan.png…]()
 
+<img width="841" alt="logojoan" src="https://github.com/user-attachments/assets/36499aed-4e26-404e-b75d-13082303f039" />
 
 
 
