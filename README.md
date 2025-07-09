@@ -3,9 +3,9 @@
 
 <img width="841" alt="aaan" src="https://github.com/user-attachments/assets/8327c8a7-910d-4863-bdf1-94a4e1610f7c" />
 
+![image](https://github.com/user-attachments/assets/55deb1ff-9c69-4697-a021-55876c8a28d8)
 
 
-![image](https://github.com/user-attachments/assets/8a152739-02a7-469a-82d0-7eba5d332314)
 
 
 <img width="841" alt="aaan" src="https://github.com/user-attachments/assets/c4179a0a-05d2-4e8e-a8ec-66a54c572658" />
