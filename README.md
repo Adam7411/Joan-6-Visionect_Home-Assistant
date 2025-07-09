@@ -6,7 +6,7 @@
 
 
 
-<img width="841" alt="aaan" src="https://github.com/user-attachments/assets/c4179a0a-05d2-4e8e-a8ec-66a54c572658" />
+<img width="841" alt="aaan" src="https://github.com/user-attachments/assets/7755a62d-6295-4ff5-bd21-754f2dcbd414" />
 
 
 
