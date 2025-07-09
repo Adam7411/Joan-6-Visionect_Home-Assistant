@@ -3,8 +3,8 @@
 
 <img width="841" alt="aaan" src="https://github.com/user-attachments/assets/8327c8a7-910d-4863-bdf1-94a4e1610f7c" />
 
-![image](https://github.com/user-attachments/assets/55deb1ff-9c69-4697-a021-55876c8a28d8)
 
+![image](https://github.com/user-attachments/assets/cf8da93a-e90d-490f-89de-ea6b6d173e01)
 
 
 
