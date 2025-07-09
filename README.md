@@ -6,9 +6,10 @@
 
 
 Instrukcja krok po kroku: 
+<img width="841" alt="aaan" src="https://github.com/user-attachments/assets/0948a26b-c578-48f5-97e9-3380ccd8ce27" />
 
 
-### [https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant](https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant)
+
 
 _______________________________________________________________________________________________
 
