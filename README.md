@@ -113,7 +113,7 @@ jeśli poprawnie zobaczysz coś podobnego (-rw-r--r-- 1 root root 1079 Jul  4 13
 
 1.  Pobierz i uruchom aplikację **Visionect Configurator** na swoim komputerze:
     *   **Windows:** [VisionectConfigurator.exe](https://files.visionect.com/VisionectConfigurator/VisionectConfigurator.exe) lub [joan-configurator-2.1.3-windows.exe](https://configurator.getjoan.com/download/flavor/joan/latest/windows_64) 
-    *   **Windows: Starsza wersja 1.3.10-->** [VisionectConfigurator1.3.10.exe](https://files.visionect.com/VisionectConfigurator2.exe) lub [VC_1.exe](https://files.visionect.com/VC_1.exe) gdy wyświetlacz e-ink niełączy się z nową (Hardware Revision Second generation Visionect Sign 6) niekiedy trzeba adres ip ustawić w [VC_1.exe] a reszta połączenia w v1.3.10 
+    *   **Windows: Starsza wersja 1.3.10-->** [VisionectConfigurator1.3.10.exe](https://files.visionect.com/VisionectConfigurator2.exe) lub [VC_1.exe](https://files.visionect.com/VC_1.exe) gdy wyświetlacz e-ink niełączy się z nową (Hardware Revision Second generation Visionect Sign 6) niekiedy trzeba adres ip ustawić w [VC_1.exe] a reszta połączenia w v1.3.10 cierpliwie pokombinuj 
     *   **Linux:** [VisionectConfigurator_linux.deb](https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_linux.deb)
     *   **macOS (Apple Silicon):** [VisionectConfigurator_m1.dmg](https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_m1.dmg)
     *   **macOS (Intel):** [VisionectConfigurator_intel.dmg](https://files.visionect.com/VisionectConfigurator/VisionectConfigurator_intel.dmg)
