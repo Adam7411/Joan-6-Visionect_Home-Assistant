@@ -5,9 +5,8 @@
 *"Wyświetlacz E-Ink Joan 6 firmy Visionect, pierwotnie zaprojektowany jako system rezerwacji sal konferencyjnych, dzięki swojej energooszczędności, dotykowemu ekranowi i elastyczności, idealnie sprawdza się również jako panel do zarządzania encjami w Home Assistant."*
 
 
-Instrukcja krok po kroku: 
-<img width="841" alt="aaan" src="https://github.com/user-attachments/assets/0948a26b-c578-48f5-97e9-3380ccd8ce27" />
 
+<img width="841" alt="aaan" src="https://github.com/user-attachments/assets/8327c8a7-910d-4863-bdf1-94a4e1610f7c" />
 
 
 
