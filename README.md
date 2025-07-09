@@ -4,8 +4,6 @@
 <img width="841" alt="aaan" src="https://github.com/user-attachments/assets/8327c8a7-910d-4863-bdf1-94a4e1610f7c" />
 
 
-![image](https://github.com/user-attachments/assets/cf8da93a-e90d-490f-89de-ea6b6d173e01)
-
 
 
 <img width="841" alt="aaan" src="https://github.com/user-attachments/assets/c4179a0a-05d2-4e8e-a8ec-66a54c572658" />
