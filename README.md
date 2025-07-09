@@ -5,7 +5,7 @@
 
 
 
-Wyświetlacz E-Ink **Joan 6** firmy Visionect, pierwotnie zaprojektowany jako system rezerwacji sal konferencyjnych, dzięki swojej energooszczędności, dotykowemu ekranowi i elastyczności, idealnie sprawdza się również jako panel do zarządzania encjami w **Home Assistant** czy też jako ramka cyfrowa na album zdjęć.
+Wyświetlacz E-Ink <span style="font-weight: 800; font-size: 1.1em;">Joan 6</span> firmy Visionect, pierwotnie zaprojektowany jako system rezerwacji sal konferencyjnych, dzięki swojej energooszczędności, dotykowemu ekranowi i elastyczności, idealnie sprawdza się również jako panel do zarządzania encjami w <span style="font-weight: 800; font-size: 1.1em;">Home Assistant</span> czy też jako ramka cyfrowa na album zdjęć.
 
 
 
