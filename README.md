@@ -147,7 +147,7 @@ Aby wyświetlić interfejs Home Assistant na tablecie, użyjemy dodatku **AppDae
 5.  **Ważne:** Zmodyfikuj plik `joanl.dash lub joan2.dash`, podmieniając przykładowe encje na własne encje z Home Assistant. Szczegółową dokumentację tworzenia dashboardów znajdziesz na [oficjalnej stronie AppDaemon](https://appdaemon.readthedocs.io/en/latest/DASHBOARD_CREATION.html).
 6.  Zrestartuj dodatek AppDaemon, aby załadować nową konfigurację.
 7.  Sprawdź, czy Twój dashboard działa, otwierając w przeglądarce adres:  
-    `http://<adres_ip_ha>:5050/joanl`  
+    `http://<adres_ip_ha>:5050/joan1`  
     (zmień `joanl` na nazwę swojego pliku `.dash` jeśli nie chcesz używać przykładowych plików).
 8.  Skopiuj ten adres URL.
 9.  Wróć do panelu **Visionect Software Suite**, przejdź do ustawień swojego tabletu i w polu **Default URL** wklej skopiowany adres dashboardu. Zapisz zmiany.
