@@ -7,7 +7,7 @@
 
 
 
-<img width="905" alt="aaan" src="https://github.com/user-attachments/assets/80124cfe-a415-467d-8504-72f6df3fde63" />
+<img width="841" alt="aaan" src="https://github.com/user-attachments/assets/c4179a0a-05d2-4e8e-a8ec-66a54c572658" />
 
 
 
