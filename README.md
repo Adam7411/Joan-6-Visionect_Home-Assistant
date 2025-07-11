@@ -137,7 +137,7 @@ Visionect Configurator wersja 1.3.10
 
 ---
 
-## ✏️ Krok 6: Tworzenie dashboardu w Home Assistant
+## ✏️ Krok 6: Tworzenie dashboardu w Home Assistant (Ewentualnie dashboard z użyciem [Puppeteer](https://github.com/Adam7411/Joan-6-Puppeteer/blob/main/README.md) )
 
 Aby wyświetlić interfejs Home Assistant na tablecie, użyjemy dodatku **AppDaemon**.
 
