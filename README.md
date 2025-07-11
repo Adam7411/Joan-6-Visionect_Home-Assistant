@@ -142,7 +142,7 @@ _______________________________________________________________________________
 ( P.S Jeśli niechcesz się bawić z AppDaemon alternatywne rozwiązanie z użyciem [Puppeteer](https://github.com/Adam7411/Joan-6-Puppeteer/blob/main/README.md) )
 _____________________________________________________________________________
 
-Aby wyświetlić interfejs Home Assistant na tablecie, użyjemy dodatku **AppDaemon**.
+Dobra lecimy dalej, aby wyświetlić interfejs Home Assistant na tablecie, użyjemy dodatku **AppDaemon**.
 
 1.  Zainstaluj dodatek **AppDaemon** w Home Assistant (jeśli jeszcze go nie masz).
 2.  Przejdź do katalogu konfiguracyjnego AppDaemon, np. przez dodatek "Samba share" lub "File editor":  
