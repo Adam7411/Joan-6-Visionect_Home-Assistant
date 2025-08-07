@@ -173,11 +173,13 @@ Dobra lecimy dalej, aby wyświetlić interfejs Home Assistant na tablecie, użyj
 
 Integracja do odczytu w Home Assistant informacje o stanie tabletu Joan (np. poziom naładowania baterii, status połączenia itp) oraz do wysyłania swojego adresu url np. ( https://www.wikipedia.org/ ) lub lokalne zdjęć ( przykład http://adresHA:8123/local/zdjecie_test.png ) (P.S plik zdjecie_test.png umieszczamy w katalogu: \192.168.xxx.xxx\config\www\ ) 
 
-[Visionect Joan](https://github.com/Adam7411/visionect_joan).
-Pozwoli to na tworzenie automatyzacji np. wysyłania powiadomienia o niskim stanie baterii albo wyświetlenie encji z poziomem bateri na tablecie czy wysyłanie zdjęć do różnych powiadomień poczym spowrotem powrót do dashboardu appdaemon itp.
+[Visionect Joan](https://github.com/Adam7411/visionect_joan)
+
+Pozwoli to na tworzenie automatyzacji np. wysyłania powiadomienia o niskim stanie baterii albo wyświetlenie encji z poziomem baterii na tablecie, czy wysyłanie zdjęć do różnych powiadomień poczym spowrotem powrót do dashboardu appdaemon itp.
 
 <img width="510" height="739" alt="3" src="https://github.com/user-attachments/assets/8f8c673d-8447-42ec-9d13-0bd4e9683437" />
 <img width="948" height="791" alt="2" src="https://github.com/user-attachments/assets/4a3c054a-e239-49c1-ab9d-037584cd7989" />
 <img width="607" height="893" alt="1" src="https://github.com/user-attachments/assets/1321cfe8-905d-44ef-b1b9-29d999559a04" />
+<img width="770" height="641" alt="4" src="https://github.com/user-attachments/assets/31e9bca1-d7c6-4245-b32f-4c909251bf2c" />
 
 
