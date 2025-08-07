@@ -179,9 +179,13 @@ Wysyłanie własnego tekstu na Joan 6 (powiadomień z HA)
 [Visionect Joan](https://github.com/Adam7411/visionect_joan)
 
 Pozwoli to na tworzenie automatyzacji n.p:
+
 wysyłania powiadomienia o niskim stanie baterii Joan 6 albo wyświetlenie encji z poziomem baterii na Joan 6
+
 wysyłanie zdjęć do różnych powiadomień poczym spowrotem powrót do dashboardu appdaemon itp.
+
 wysyłanie zrzutu z kamery snapshot.jpg
+
 wysyłanie powiadomień tekstowych z Home Assistant na Joan 6
 
 <img width="510" height="739" alt="3" src="https://github.com/user-attachments/assets/8f8c673d-8447-42ec-9d13-0bd4e9683437" />
