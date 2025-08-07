@@ -26,7 +26,7 @@ ________________________________________________________________________________
 - Uprawnienia administratora (root) do serwera Proxmox.
 - Komputer z systemem Windows, Linux lub macOS (do wstępnej konfiguracji tabletu).
 - Tablet **Visionect Joan 6**.
-
+- Niestandardowy dodatek HASC [Visionect Joan](https://github.com/Adam7411/visionect_joan)
 > **Ważna uwaga:** Kontener Docker z oprogramowaniem Visionect Software Suite (serwerem zarządzającym tabletem) musi być stale uruchomiony. Jeśli korzystasz już z Home Assistant na Proxmoxie, nie stanowi to dodatkowego obciążenia. Aczkolwiek HA może działać na innym urządzeniu.
 
 ---
