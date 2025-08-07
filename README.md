@@ -168,11 +168,13 @@ Dobra lecimy dalej, aby wyświetlić interfejs Home Assistant na tablecie, użyj
 
 ---
 
-## ⭐ Integracja z Home Assistant (Odczyt stanu tabletu)
+## ⭐ Integracja z Home Assistant (Odczyt stanu tabletu i wysyłanie url)
 
 
-Aby odczytywać w Home Assistant informacje o stanie tabletu (np. poziom naładowania baterii, status połączenia itp), możesz skorzystać z niestandardowej integracji HACS dostępnej w moim drugim repozytorium  [Visionect Joan](https://github.com/Adam7411/visionect_joan).
-Pozwoli to na tworzenie automatyzacji np. wysyłania powiadomienia o niskim stanie baterii albo wyświetlenie encji z poziomem bateri na tablecie.
+Integracja do odczytu w Home Assistant informacje o stanie tabletu (np. poziom naładowania baterii, status połączenia itp) oraz do wysyłania swojego adresu url np. ( https://www.wikipedia.org/ ) lub lokalne zdjęć ( przykład http://adresHA:8123/local/zdjecie_test.png ) (P.S plik zdjecie_test.png umieszczamy w katalogu \192.168.xxx.xxx\config\www\ ) 
+
+[Visionect Joan](https://github.com/Adam7411/visionect_joan).
+Pozwoli to na tworzenie automatyzacji np. wysyłania powiadomienia o niskim stanie baterii albo wyświetlenie encji z poziomem bateri na tablecie czy wysyłanie zdjęć 
 
 ![image](https://github.com/user-attachments/assets/e7cfc034-8895-49d3-852c-426cfd9e3811)
 
