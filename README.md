@@ -194,4 +194,4 @@ wysyłanie powiadomień tekstowych z Home Assistant na Joan 6
 <img width="770" height="641" alt="4" src="https://github.com/user-attachments/assets/31e9bca1-d7c6-4245-b32f-4c909251bf2c" />
 <img width="433" height="290" alt="vvvvu" src="https://github.com/user-attachments/assets/efcf4b46-19ac-4b98-aeff-7fa63a648c65" />
 
-- [Chcesz kupić nowy Joan 6 kliknij](https://allegrolokalnie.pl/oferta/joan-6-nowy-home-assistant-energooszczedny-dotykowy-tablet-eink).
+
