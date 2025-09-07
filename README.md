@@ -22,7 +22,7 @@ ________________________________________________________________________________
 
 ## 🧰 Wymagania wstępne
 
-- Serwer z zainstalowanym **Proxmox VE** i dostępem do internetu.
+- Serwer z zainstalowanym **Proxmox VE** i dostępem do internetu. 
 - Uprawnienia administratora (root) do serwera Proxmox.
 - Komputer z systemem Windows, Linux lub macOS (do wstępnej konfiguracji tabletu).
 - Tablet **Visionect Joan 6**. - [Chcesz kupić nowy Joan 6 kliknij](https://allegrolokalnie.pl/oferta/joan-6-nowy-home-assistant-energooszczedny-dotykowy-tablet-eink).
