@@ -1,3 +1,4 @@
+Visionect Software Suite instalacja w Proxmox
 
 <img width="841" alt="logojoan" src="https://github.com/user-attachments/assets/36499aed-4e26-404e-b75d-13082303f039" />
 
@@ -22,7 +23,7 @@ ________________________________________________________________________________
 
 ## 🧰 Wymagania wstępne
 
-- Serwer z zainstalowanym **Proxmox VE** i dostępem do internetu. 
+- Serwer z zainstalowanym **Proxmox VE** i dostępem do internetu. Jeśli chcesz bezpośrednio zainstalować Visionect Software Suite w Home Assistant kliknij --> [Visionect-V3-Allinone](https://github.com/Adam7411/visionect-v3-allinonegithub.com/Adam7411/visionect_joan)
 - Uprawnienia administratora (root) do serwera Proxmox.
 - Komputer z systemem Windows, Linux lub macOS (do wstępnej konfiguracji tabletu).
 - Tablet **Visionect Joan 6**. - [Chcesz kupić nowy Joan 6 kliknij](https://allegrolokalnie.pl/oferta/joan-6-nowy-home-assistant-energooszczedny-dotykowy-tablet-eink).
