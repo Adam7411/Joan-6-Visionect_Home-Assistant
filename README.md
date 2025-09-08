@@ -170,13 +170,13 @@ Dobra lecimy dalej, aby wyświetlić interfejs Home Assistant na tablecie, użyj
 
 ---
 
-## ⭐ Integracja z Home Assistant (Odczyt stanu tabletu i wysyłanie url i własnego tekstu)
+## ⭐ Obowiazkowa integracja Visionect Joan dla Home Assistant (Odczyt stanu tabletu i wysyłanie zdjęc url i własnego tekstu)
 
 
 Integracja do odczytu w Home Assistant informacje o stanie tabletu Joan (np. poziom naładowania baterii, status połączenia itp) 
 Do wysyłania swojego adresu url z poziomu HA na Joan 6 np. ( https://www.wikipedia.org/ ) lub lokalne zdjęć ( przykład http://adresHA:8123/local/zdjecie_test.png ) 
 (P.S plik zdjecie_test.png umieszczamy w katalogu: \192.168.xxx.xxx\config\www\) 
-Wysyłanie własnego tekstu na Joan 6 (powiadomień z HA)
+Wysyłanie własnego tekstu z zdjęciem na Joan 6 (powiadomień z HA). **Wsparcie szablonów Jinja2 do dynamicznej treści.** __Wsparcie szablonów Jinja2 do dynamicznej treści.__.
 
 [Visionect Joan](https://github.com/Adam7411/visionect_joan)
 
