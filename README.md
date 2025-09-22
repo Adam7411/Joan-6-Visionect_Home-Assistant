@@ -128,12 +128,10 @@ jeśli poprawnie zobaczysz coś podobnego (-rw-r--r-- 1 root root 1079 Jul  4 13
         *   **Server IP**: Adres IP Twojej maszyny wirtualnej z Dockerem (np. `192.168.1.100`).
         *   **Port**: `11113`
      
-          Visionect Configurator wersja 2.0
-    ![image](https://github.com/user-attachments/assets/de30fd1e-9bd3-4f98-ab00-9a3b534f7332)
-_
+Visionect Configurator wersja 2.0 ![image](https://github.com/user-attachments/assets/de30fd1e-9bd3-4f98-ab00-9a3b534f7332)
 
-        Visionect Configurator wersja 1.0
-<img width="735" height="420" alt="Bez tytułu" src="https://github.com/user-attachments/assets/e232db50-50ed-48c3-9f1c-6c38b8690cc3" />
+
+Visionect Configurator wersja 1.0 <img width="735" height="420" alt="Bez tytułu" src="https://github.com/user-attachments/assets/e232db50-50ed-48c3-9f1c-6c38b8690cc3" />
 
 _______________________________________________
 
