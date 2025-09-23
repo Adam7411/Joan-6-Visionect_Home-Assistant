@@ -133,6 +133,7 @@ Visionect Configurator wersja 2.0
 
 
 Visionect Configurator wersja 1.0 
+
 <img width="754" height="501" alt="Bez tytułu" src="https://github.com/user-attachments/assets/a9908c7c-686d-430c-934d-69d95d50e3b6" />
 
 
