@@ -1,11 +1,8 @@
-# Visionect Software Suite - Instalacja w Proxmox
 
-## Wymagania wstępne
-**WAŻNE:** Przed rozpoczęciem instalacji upewnij się, że...
-
-## Krok 1: Przygotowanie środowiska
 
 --> Jeśli chcesz bezpośrednio zainstalować Visionect Software Suite w Home Assistant kliknij --> [Visionect-V3-Allinone](https://github.com/Adam7411/visionect-v3-allinone)
+
+# Visionect Software Suite - Instalacja w Proxmox
 
 --> [English version](https://github.com/Adam7411/Joan-6-Visionect_Home-Assistant_EN)
 
