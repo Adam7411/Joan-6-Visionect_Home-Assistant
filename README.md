@@ -151,8 +151,7 @@ _______________________________________________
 ---
 
 ## ✏️ Krok 6: Tworzenie dashboardu w Home Assistant 
-_______________________________________________________________________________
-( P.S Jeśli niechcesz się bawić z AppDaemon alternatywne rozwiązanie z użyciem [Puppeteer](https://github.com/Adam7411/Joan-6-Puppeteer/blob/main/README.md) )
+
 _____________________________________________________________________________
 
 Dobra lecimy dalej, aby wyświetlić interfejs Home Assistant na tablecie, użyjemy dodatku **AppDaemon**.
