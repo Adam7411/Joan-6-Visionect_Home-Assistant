@@ -152,6 +152,7 @@ _______________________________________________
 
 ## ✏️ Krok 6: Tworzenie dashboardu w Home Assistant 
 
+[Joan 6 dashboard Generator]([https://github.com/Adam7411/visionect_joan](https://github.com/Adam7411/joan_generator/blob/main/README.md)) 👈️
 _____________________________________________________________________________
 
 Dobra lecimy dalej, aby wyświetlić interfejs Home Assistant na tablecie, użyjemy dodatku **AppDaemon**.
