@@ -1,5 +1,5 @@
 ***
-- [Jeśli chcesz bezpośrednio zainstalować Visionect Software Suite w Home Assistant kliknij --> [Visionect-V3-Allinone](https://github.com/Adam7411/visionect-v3-allinone/blob/main/visionect-v3-allinone/README_pl.md)
+- [Jeśli chcesz bezpośrednio zainstalować Visionect Software Suite w Home Assistant kliknij --> Visionect-V3-Allinone](https://github.com/Adam7411/visionect-v3-allinone/blob/main/visionect-v3-allinone/README_pl.md)
 - [Dodatek Visionect Joan dla Home Assistant](https://github.com/Adam7411/visionect_joan/blob/main/README_pl.md)
 - [Dodatek Joan 6: AppDaemon Dashboard Generator](https://github.com/Adam7411/joan_generator/)
 - [Chcesz kupić nowy Joan 6?](https://allegrolokalnie.pl/oferta/joan-6-nowy-home-assistant-energooszczedny-dotykowy-tablet-eink)
