@@ -18,6 +18,8 @@
 
 
 <img width="841" alt="aaan" src="https://github.com/user-attachments/assets/a729ed1b-8fb3-4390-ba46-7caa0d1d8223" />
+<img width="1484" height="1278" alt="Bez tytułu" src="https://github.com/user-attachments/assets/fecc6864-c626-44f2-b59f-11c90226a86d" />
+
 
 
 
