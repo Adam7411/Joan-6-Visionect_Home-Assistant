@@ -1,8 +1,8 @@
 ***
 - [Jeśli chcesz bezpośrednio zainstalować Visionect Software Suite w Home Assistant kliknij --> Visionect-V3-Allinone](https://github.com/Adam7411/visionect-v3-allinone/blob/main/visionect-v3-allinone/README_pl.md)
 - [Dodatek Visionect Joan dla Home Assistant](https://github.com/Adam7411/visionect_joan/blob/main/README_pl.md)
-- [Dodatek Joan 6: AppDaemon Dashboard Generator](https://github.com/Adam7411/joan_generator/)
-- [Chcesz kupić nowy Joan 6?](https://allegrolokalnie.pl/oferta/joan-6-nowy-home-assistant-energooszczedny-dotykowy-tablet-eink)
+- [Dodatek Joan 6/13PRO: AppDaemon Dashboard Generator](https://github.com/Adam7411/joan_generator/)
+
 ***
 
 
@@ -36,7 +36,7 @@ ________________________________________________________________________________
 - Serwer z zainstalowanym **Proxmox VE** i dostępem do internetu. Jeśli chcesz bezpośrednio zainstalować Visionect Software Suite w Home Assistant kliknij --> [Visionect-V3-Allinone](https://github.com/Adam7411/visionect-v3-allinone)
 - Uprawnienia administratora (root) do serwera Proxmox.
 - Komputer z systemem Windows, Linux lub macOS (do wstępnej konfiguracji tabletu).
-- Tablet **Visionect Joan 6**. - [Chcesz kupić nowy Joan 6 kliknij](https://allegrolokalnie.pl/oferta/joan-6-nowy-home-assistant-energooszczedny-dotykowy-tablet-eink).
+- Tablet **Visionect Joan 6/13PRO**. 
 - Dodatek HACS [Visionect Joan](https://github.com/Adam7411/visionect_joan)
 > **Ważna uwaga:** Kontener Docker z oprogramowaniem Visionect Software Suite (serwerem zarządzającym tabletem) musi być stale uruchomiony. Jeśli korzystasz już z Home Assistant na Proxmoxie, nie stanowi to dodatkowego obciążenia. Aczkolwiek HA może działać na innym urządzeniu.
 
@@ -156,7 +156,7 @@ _______________________________________________
 
 ## ✏️ Krok 6: Tworzenie dashboardu w Home Assistant 
 
-[Można przez Joan 6 AppDaemon dashboard Generator](https://github.com/Adam7411/joan_generator/blob/main/README.md)👈️
+[Można przez Joan 6/13PRO AppDaemon dashboard Generator](https://github.com/Adam7411/joan_generator/blob/main/README.md)👈️
 _____________________________________________________________________________
 
 Dobra lecimy dalej, aby wyświetlić interfejs Home Assistant na tablecie, użyjemy dodatku **AppDaemon**.
@@ -188,7 +188,7 @@ Dobra lecimy dalej, aby wyświetlić interfejs Home Assistant na tablecie, użyj
 
 
 Integracja do odczytu w Home Assistant informacje o stanie tabletu Joan (np. poziom naładowania baterii, status połączenia itp) 
-Do wysyłania swojego adresu url z poziomu HA na Joan 6 np. ( https://www.wikipedia.org/ ) lub lokalne zdjęć ( przykład http://adresHA:8123/local/zdjecie_test.png ) 
+Do wysyłania swojego adresu url z poziomu HA na Joan 6/13PRO np. ( https://www.wikipedia.org/ ) lub lokalne zdjęć ( przykład http://adresHA:8123/local/zdjecie_test.png ) 
 (P.S plik zdjecie_test.png umieszczamy w katalogu: \192.168.xxx.xxx\config\www\) 
 Wysyłanie własnego tekstu z zdjęciem na Joan 6 (powiadomień z HA). **Wsparcie szablonów Jinja2 z HA do dynamicznej treści.**
 
